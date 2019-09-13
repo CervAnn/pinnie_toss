@@ -1,0 +1,27 @@
+.App-header {
+  background-image: url('../../images/football-field-image.jpg');
+  height: 500px;
+  object-fit: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: #F4B641;
+  display: flex;
+  align-items: flex-end;
+  font-family: 'Graduate', cursive;
+}
+
+#football-jersey {
+  height: 165px;
+  margin-left: 1%;
+}
+
+#header-title {
+  font-size: 165px;
+  text-shadow:
+  -4px -4px 0 #000,  
+   4px -4px 0 #000,
+   -4px 4px 0 #000,
+    4px 4px 0 #000;
+}
