@@ -3,11 +3,11 @@ import './PickALeague.css'
 import { fetchFootballData } from '../../apiCalls';
 import { addTeams } from '../../actions/index'
 import { connect } from "react-redux";
+import { Redirect } from 'react-router-dom'
 
 class PickALeague extends Component {
 
   getNFLTeams = (e) => {
-    console.log("ho")
     e.preventDefault()
     fetchFootballData()
       .then(nflTeams => nflTeams.teams.filter(team => team.idLeague === "4391" && team.strLeague === "NFL"))
@@ -15,13 +15,16 @@ class PickALeague extends Component {
   }
 
   getNCAATeams = (e) => {
-    console.log("hey")
     e.preventDefault()
     fetchFootballData()
-      .then(data => console.log(data.teams.filter(team => team.idLeague === "4479" && team.strDivision === "FBS")))
+    .then(ncaaTeams => ncaaTeams.teams.filter(team => team.idLeague === "4479" && team.strDivision === "FBS"))
+    .then(teams => this.props.addTeams(teams))  
   }
 
   render() {
+    if (this.props.teams.length > 0) {
+      return <Redirect push to="/method" />
+    }
     return (
     <article className="pickLeague">
       <h1 id="pickLeague-text">Let's Get Started, Pick A League!</h1>
@@ -38,13 +41,13 @@ class PickALeague extends Component {
   }
 }
 
-  // export const mapStateToProps = store => ({
-  //   teams: store.teams
-  // })
+export const mapStateToProps = store => ({
+  teams: store.teams
+})
 
-  export const mapDispatchToProps = dispatch => ({
-    addTeams: teams => dispatch(addTeams(teams))
-  });
+export const mapDispatchToProps = dispatch => ({
+  addTeams: teams => dispatch(addTeams(teams))
+});
 
-  export default connect(null, mapDispatchToProps)(PickALeague);
+export default connect(mapStateToProps, mapDispatchToProps)(PickALeague);
 
