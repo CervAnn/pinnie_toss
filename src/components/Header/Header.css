@@ -1,6 +1,6 @@
 .App-header {
   background-image: url('../../images/football-field-image.jpg');
-  height: 500px;
+  height: 35vh;
   object-fit: cover;
   background-position: center bottom;
   background-repeat: no-repeat;

@@ -1,7 +1,7 @@
 .Container {
   background-color: #5E6A68;
+  height: 65vh;
   width: 100%;
-  height: 500px;
   opacity: .8;
   display: flex;
   justify-content: center;

@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import '../NFLPick/NFLPick.css'
 
 
-const NFLPick = ({randomTeam}) => {
+export const NFLPick = ({randomTeam}) => {
   return (
     <section className="NFLPick">
       <article id="team-name-badge">

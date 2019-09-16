@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should match the snapshot 1`] = `
+<header
+  className="App-header"
+>
+  <h1
+    id="header-title"
+  >
+    Pinnie Toss
+  </h1>
+  <img
+    alt=""
+    id="football-jersey"
+    src={
+      Object {
+        "ReactComponent": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        },
+        "__esModule": true,
+        "default": "football-jersey.svg",
+      }
+    }
+  />
+</header>
+`;

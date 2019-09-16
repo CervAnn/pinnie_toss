@@ -13,7 +13,6 @@ export const Container = () => {
               <Route exact path="/" render={() => <PickALeague />} />
               <Route exact path="/method" render={() => <PickAMethod />} />
               <Route exact path="/randomPick" render={() => <RandomPick />} />
-
           </Switch>
       </article>
     </section>

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container should match the snapshot 1`] = `
+<section
+  className="Container"
+>
+  <article
+    className="buttonContainer"
+  >
+    <Switch>
+      <Route
+        exact={true}
+        path="/"
+        render={[Function]}
+      />
+      <Route
+        exact={true}
+        path="/method"
+        render={[Function]}
+      />
+      <Route
+        exact={true}
+        path="/randomPick"
+        render={[Function]}
+      />
+    </Switch>
+  </article>
+</section>
+`;

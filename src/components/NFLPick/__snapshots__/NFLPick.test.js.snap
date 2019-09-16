@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NFLPick should render without crashing 1`] = `
+<section
+  className="NFLPick"
+>
+  <article
+    id="team-name-badge"
+  >
+    <img
+      alt=""
+      id="nfl-team-badge"
+      src="https://www.thesportsdb.com/images/media/team/badge/xtwxyt1421431860.png"
+    />
+    <h1>
+      New England Patriots
+    </h1>
+  </article>
+</section>
+`;

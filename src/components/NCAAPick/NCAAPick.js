@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import '../NCAAPick/NCAAPick.css'
 
-const NCAAPick = ({randomTeam}) => {
+export const NCAAPick = ({randomTeam}) => {
   return (
     <section className="NCAAPick">
       <article id="team-name-badge">

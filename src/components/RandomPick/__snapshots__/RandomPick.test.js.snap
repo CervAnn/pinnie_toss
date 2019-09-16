@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RandomPick should render without crashing 1`] = `
+<section
+  className="RandomPick"
+>
+  <h2>
+    Congratulations! You are now a proud fan of the:
+  </h2>
+  <Connect(NFLPick) />
+</section>
+`;
