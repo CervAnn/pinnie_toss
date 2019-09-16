@@ -5,7 +5,7 @@ export const fetchFootballData = async () => {
     throw new Error ('There was an issue grabbing the data.')
   }
   const footballData = await response.json();
-  console.log("data", footballData)
+  console.log("apiData", footballData)
   return footballData
 }
 
