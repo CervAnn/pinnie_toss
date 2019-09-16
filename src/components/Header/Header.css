@@ -10,6 +10,7 @@
   display: flex;
   align-items: flex-end;
   font-family: 'Graduate', cursive;
+  border-bottom: 4px solid white;
 }
 
 #football-jersey {
