@@ -1,0 +1,17 @@
+.NFLPick {
+  display: flex;
+  flex-direction: column;
+}
+
+#nfl-team-badge {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+#team-name-badge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
