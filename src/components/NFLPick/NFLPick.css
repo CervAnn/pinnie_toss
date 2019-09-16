@@ -1,6 +1,7 @@
 .NFLPick {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #nfl-team-badge {
