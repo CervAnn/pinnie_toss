@@ -33,6 +33,7 @@
 #nfl-button, #ncaa-button {
 background-color: transparent;
 border: none;
+font-size: 25px;
 }
 
 #nfl-buttons-container, #ncaa-buttons-container {
