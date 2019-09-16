@@ -1,6 +1,7 @@
 .NCAAPick {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #ncaa-team-badge {
