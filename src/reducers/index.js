@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import { addTeamsReducer } from './addTeamsReducer'
 
 const rootReducer = combineReducers({
-addTeamsReducer,
+teams: addTeamsReducer,
 })
 
 export default rootReducer;

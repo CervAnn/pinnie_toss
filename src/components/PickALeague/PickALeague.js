@@ -10,7 +10,8 @@ class PickALeague extends Component {
     console.log("ho")
     e.preventDefault()
     fetchFootballData()
-      .then(teams => addTeams(teams))
+      .then(nflTeams => nflTeams.teams.filter(team => team.idLeague === "4391" && team.strLeague === "NFL"))
+      .then(teams => this.props.addTeams(teams))
   }
 
   getNCAATeams = (e) => {
