@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import './PickAMethod.css'
-import { pickRandom } from '../../actions/index'
-import { Redirect } from 'react-router-dom'
+import React, { Component } from 'react';
+import './PickAMethod.css';
+import { pickRandom } from '../../actions/index';
+import { Redirect } from 'react-router-dom';
 import { connect } from "react-redux";
 
 export class PickAMethod extends Component {

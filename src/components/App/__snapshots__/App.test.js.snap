@@ -5,6 +5,6 @@ exports[`App should render without crashing 1`] = `
   className="App"
 >
   <Header />
-  <Container />
+  <Connect(Container) />
 </section>
 `;

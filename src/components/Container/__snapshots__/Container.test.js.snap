@@ -4,6 +4,11 @@ exports[`Container should match the snapshot 1`] = `
 <section
   className="Container"
 >
+  <p
+    id="welcome-text"
+  >
+    Welcome to Pinnie Toss, a game for the casual football fan. Whether you're looking for a team to support for now, for later, or for always, Pinnie Toss is here to help.
+  </p>
   <article
     className="buttonContainer"
   >
