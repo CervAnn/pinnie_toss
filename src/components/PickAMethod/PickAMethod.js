@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './PickAMethod.css';
 import { pickRandom } from '../../actions/index';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import { connect } from "react-redux";
+import PropTypes from 'prop-types'
+
 
 export class PickAMethod extends Component {
 
@@ -11,6 +13,8 @@ export class PickAMethod extends Component {
     let randomIndex = Math.floor(Math.random() * (this.props.teams.length))
     this.props.pickRandom(this.props.teams[randomIndex])
     }
+
+  
 
   render() {
     if (this.props.randomTeam.strTeam) {
@@ -24,8 +28,10 @@ export class PickAMethod extends Component {
           <button id="getRandom-button" onClick={(e) => this.randomTeam(e)}>Get Random Team</button>
         </div>
         <div id="lightSurvey-buttons-container">
+          <Link to="/surveyPt1" id="survey-pt1-link">
           <input type="submit" id="light-survey" value=""/>
           <button id="lightSurvey-button" >Light Questionnaire</button>
+          </Link>
         </div>
     </article>
     )
@@ -43,4 +49,10 @@ export const mapDispatchToProps = dispatch => ({
 
 export default connect(mapStateToProps, mapDispatchToProps)(PickAMethod);
 
+PickAMethod.propTypes = {
+  teams: PropTypes.arrayOf(PropTypes.object),
+  randomTeam: PropTypes.object,
+  mapStateToProps: PropTypes.func,
+  mapDispatchToProps: PropTypes.func
+}
 

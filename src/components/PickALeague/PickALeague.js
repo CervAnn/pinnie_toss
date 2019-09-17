@@ -4,6 +4,7 @@ import { fetchFootballData } from '../../util/apiCalls';
 import { addTeams } from '../../actions/index'
 import { connect } from "react-redux";
 import { Redirect } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 export class PickALeague extends Component {
 
@@ -50,4 +51,10 @@ export const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PickALeague);
+
+PickALeague.propTypes = {
+  teams: PropTypes.arrayOf(PropTypes.object),
+  mapStateToProps: PropTypes.func,
+  mapDispatchToProps: PropTypes.func
+}
 

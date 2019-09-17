@@ -3,11 +3,13 @@ import { connect } from 'react-redux'
 import NFLPick from '../NFLPick/NFLPick'
 import NCAAPick from '../NCAAPick/NCAAPick'
 import './RandomPick.css'
+import PropTypes from 'prop-types'
+
 
 export const RandomPick = ({randomTeam}) => {
   return (
     <section className="RandomPick">
-      <h2>Congratulations! You are now a proud fan of the:</h2>
+      <h2 id="randomPick-text">Congratulations! You are now a proud fan of the:</h2>
       {randomTeam.strLeague === "NFL" ? <NFLPick /> : <NCAAPick />}
     </section>
   )
@@ -20,3 +22,9 @@ export const mapStateToProps = store => ({
 
 
 export default connect(mapStateToProps)(RandomPick);
+
+RandomPick.propTypes = {
+  teams: PropTypes.arrayOf(PropTypes.object),
+  randomTeam: PropTypes.object,
+  strLeague: PropTypes.string
+}

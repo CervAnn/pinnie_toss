@@ -1,4 +1,4 @@
-.pickMethod {
+.PickMatchUp {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -6,14 +6,14 @@
   width: 100%;
 }
 
-#pickMethod-text {
+#pickMatchUp-text {
   text-align: center;
   font-size: 35px;
   width: 100%;
 }
 
-#magic-ball {
-  background: url('../../images/magic-ball.svg') no-repeat;
+#gloves {
+  background: url('../../images/gloves.svg') no-repeat;
   background-size: 150px;
   height: 200px;
   width: 150px;
@@ -21,22 +21,22 @@
   border: none;
 }
 
-#light-survey {
-  background: url('../../images/survey.svg') no-repeat;
-  background-size: 150px;
+#trophy {
+  background: url('../../images/trophy.svg') no-repeat;
+  background-size: 135px;
   height: 200px;
   width: 150px;
   object-fit: cover;
   border: none;
 }
 
-#getRandom-button, #lightSurvey-button {
+#gloves-button, #trophy-button {
 background-color: transparent;
 border: none;
 font-size: 25px;
 }
 
-#getRandom-buttons-container, #lightSurvey-buttons-container {
+#pickUnderDog-buttons-container, #pickSafeBet-buttons-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -45,15 +45,7 @@ font-size: 25px;
   margin-top: 65px;
 }
 
-#survey-pt1-link {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
-}
-
-#pickMethod-text, #getRandom-button, #lightSurvey-button {
+#pickMatchUp-text, #gloves-button, #trophy-button {
   color: white;
   text-shadow:
   -1px -1px 0 #193D7B,  
@@ -61,3 +53,11 @@ font-size: 25px;
    -1px 1px 0 #193D7B,
     1px 1px 0 #193D7B;
 }
+
+/* #survey-pt1-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+} */
