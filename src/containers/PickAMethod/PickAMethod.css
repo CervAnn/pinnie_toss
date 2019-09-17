@@ -13,7 +13,7 @@
 }
 
 #magic-ball {
-  background: url('../../images/magic-ball.svg') no-repeat;
+  background: url("../../images/magic-ball.svg") no-repeat;
   background-size: 150px;
   height: 200px;
   width: 150px;
@@ -22,7 +22,7 @@
 }
 
 #light-survey {
-  background: url('../../images/survey.svg') no-repeat;
+  background: url("../../images/survey.svg") no-repeat;
   background-size: 150px;
   height: 200px;
   width: 150px;
@@ -30,13 +30,15 @@
   border: none;
 }
 
-#getRandom-button, #lightSurvey-button {
-background-color: transparent;
-border: none;
-font-size: 25px;
+#getRandom-button,
+#lightSurvey-button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
 }
 
-#getRandom-buttons-container, #lightSurvey-buttons-container {
+#getRandom-buttons-container,
+#lightSurvey-buttons-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -53,11 +55,10 @@ font-size: 25px;
   align-items: center;
 }
 
-#pickMethod-text, #getRandom-button, #lightSurvey-button {
+#pickMethod-text,
+#getRandom-button,
+#lightSurvey-button {
   color: white;
-  text-shadow:
-  -1px -1px 0 #193D7B,  
-   1px -1px 0 #193D7B,
-   -1px 1px 0 #193D7B,
-    1px 1px 0 #193D7B;
+  text-shadow: -1px -1px 0 #193d7b, 1px -1px 0 #193d7b, -1px 1px 0 #193d7b,
+    1px 1px 0 #193d7b;
 }

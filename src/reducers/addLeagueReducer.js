@@ -1,8 +1,8 @@
 export const addLeagueReducer = (state = {}, action) => {
-  switch(action.type) {
-    case 'ADD_LEAGUE' :
+  switch (action.type) {
+    case "ADD_LEAGUE":
       return action.league;
-    default :
-    return state;
+    default:
+      return state;
   }
-}
+};

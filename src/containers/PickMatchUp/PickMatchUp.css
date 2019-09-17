@@ -13,7 +13,7 @@
 }
 
 #gloves {
-  background: url('../../images/gloves.svg') no-repeat;
+  background: url("../../images/gloves.svg") no-repeat;
   background-size: 150px;
   height: 200px;
   width: 150px;
@@ -22,7 +22,7 @@
 }
 
 #trophy {
-  background: url('../../images/trophy.svg') no-repeat;
+  background: url("../../images/trophy.svg") no-repeat;
   background-size: 135px;
   height: 200px;
   width: 150px;
@@ -30,13 +30,15 @@
   border: none;
 }
 
-#gloves-button, #trophy-button {
-background-color: transparent;
-border: none;
-font-size: 25px;
+#gloves-button,
+#trophy-button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
 }
 
-#pickUnderDog-buttons-container, #pickSafeBet-buttons-container {
+#pickUnderDog-buttons-container,
+#pickSafeBet-buttons-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -45,19 +47,18 @@ font-size: 25px;
   margin-top: 65px;
 }
 
-#pickMatchUp-text, #gloves-button, #trophy-button {
+#pickMatchUp-text,
+#gloves-button,
+#trophy-button {
   color: white;
-  text-shadow:
-  -1px -1px 0 #193D7B,  
-   1px -1px 0 #193D7B,
-   -1px 1px 0 #193D7B,
-    1px 1px 0 #193D7B;
+  text-shadow: -1px -1px 0 #193d7b, 1px -1px 0 #193d7b, -1px 1px 0 #193d7b,
+    1px 1px 0 #193d7b;
 }
 
-/* #survey-pt1-link {
+#yourTeam-link {
   display: flex;
   flex-direction: column;
   text-decoration: none;
   justify-content: center;
   align-items: center;
-} */
+}

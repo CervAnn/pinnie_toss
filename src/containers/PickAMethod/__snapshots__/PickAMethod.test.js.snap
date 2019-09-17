@@ -30,7 +30,7 @@ exports[`PickAMethod should match the snapshot with all data passed in correctly
   >
     <Link
       id="survey-pt1-link"
-      to="/surveyPt1"
+      to="/survey"
     >
       <input
         id="light-survey"

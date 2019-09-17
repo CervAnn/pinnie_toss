@@ -1,15 +1,15 @@
-import { pickRandomReducer } from "./pickRandomReducer";
+import { getFinalPickReducer } from "./getFinalPickReducer";
 
-describe("pickRandomReducer", () => {
+describe("getFinalPickReducer", () => {
   it("should return the default state", () => {
     let expected = {};
-    let result = pickRandomReducer(undefined, {});
+    let result = getFinalPickReducer(undefined, {});
     expect(result).toEqual(expected);
   });
 
-  it("should return the action's team", () => {
+  it("should return a finalTeam object per the action", () => {
     let mockAction = {
-      type: "PICK_RANDOM",
+      type: "GET_FINAL_PICK",
       team: {
         idTeam: "134920",
         strLeague: "NFL",
@@ -26,7 +26,7 @@ describe("pickRandomReducer", () => {
         "https://www.thesportsdb.com/images/media/team/badge/xtwxyt1421431860.png"
     };
 
-    let result = pickRandomReducer({}, mockAction);
+    let result = getFinalPickReducer({}, mockAction);
 
     expect(result).toEqual(expected);
   });

@@ -1,9 +1,8 @@
 export const addSeasonReducer = (state = "", action) => {
-  switch(action.type) {
-    case 'ADD_SEASON' :
-      console.log("stuff", action.season)
+  switch (action.type) {
+    case "ADD_SEASON":
       return action.season;
-    default :
-    return state;
+    default:
+      return state;
   }
-}
+};

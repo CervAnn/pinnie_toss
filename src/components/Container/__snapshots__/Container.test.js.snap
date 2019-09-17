@@ -30,7 +30,12 @@ exports[`Container should match the snapshot 1`] = `
       />
       <Route
         exact={true}
-        path="/surveyPt1"
+        path="/survey"
+        render={[Function]}
+      />
+      <Route
+        exact={true}
+        path="/yourTeam"
         render={[Function]}
       />
     </Switch>
