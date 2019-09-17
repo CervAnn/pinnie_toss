@@ -12,7 +12,9 @@ exports[`NFLPick should render without crashing 1`] = `
       id="nfl-team-badge"
       src="https://www.thesportsdb.com/images/media/team/badge/xtwxyt1421431860.png"
     />
-    <h1>
+    <h1
+      id="nfl-team-name"
+    >
       New England Patriots
     </h1>
   </article>

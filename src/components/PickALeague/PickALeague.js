@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './PickALeague.css'
 import { fetchFootballData } from '../../util/apiCalls';
-import { addTeams } from '../../actions/index'
+import { addTeams, addLeague } from '../../actions/index'
 import { connect } from "react-redux";
 import { Redirect } from 'react-router-dom'
 import PropTypes from 'prop-types'
@@ -10,6 +10,11 @@ export class PickALeague extends Component {
 
   getNFLTeams = (e) => {
     e.preventDefault()
+    let league = {
+      leagueName: "NFL",
+      leagueId: 4391
+    }
+    this.props.addLeague(league)
     fetchFootballData()
       .then(nflTeams => nflTeams.teams.filter(team => team.idLeague === "4391" && team.strLeague === "NFL"))
       .then(teams => this.props.addTeams(teams))
@@ -17,6 +22,12 @@ export class PickALeague extends Component {
 
   getNCAATeams = (e) => {
     e.preventDefault()
+    let league = {
+      leagueName: "NCAA",
+      leagueId: 4479,
+      leagueDivision: "FBS"
+    }
+    this.props.addLeague(league)
     fetchFootballData()
     .then(ncaaTeams => ncaaTeams.teams.filter(team => team.idLeague === "4479" && team.strDivision === "FBS"))
     .then(teams => this.props.addTeams(teams))  
@@ -43,17 +54,20 @@ export class PickALeague extends Component {
 }
 
 export const mapStateToProps = store => ({
-  teams: store.teams
+  teams: store.teams,
+  league: store.league
 })
 
 export const mapDispatchToProps = dispatch => ({
-  addTeams: teams => dispatch(addTeams(teams))
+  addTeams: teams => dispatch(addTeams(teams)),
+  addLeague: league => dispatch(addLeague(league))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PickALeague);
 
 PickALeague.propTypes = {
   teams: PropTypes.arrayOf(PropTypes.object),
+  league: PropTypes.object,
   mapStateToProps: PropTypes.func,
   mapDispatchToProps: PropTypes.func
 }

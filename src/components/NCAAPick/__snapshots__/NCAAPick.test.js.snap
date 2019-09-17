@@ -12,7 +12,9 @@ exports[`NCAAPick should render without crashing 1`] = `
       id="ncaa-team-badge"
       src="https://www.thesportsdb.com/images/media/team/badge/8f2j7k1564336246.png"
     />
-    <h1>
+    <h1
+      id="ncaa-team-name"
+    >
       Michigan
        
       Wolverines

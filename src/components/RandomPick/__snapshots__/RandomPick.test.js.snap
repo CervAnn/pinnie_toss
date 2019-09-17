@@ -4,7 +4,9 @@ exports[`RandomPick should render without crashing 1`] = `
 <section
   className="RandomPick"
 >
-  <h2>
+  <h2
+    id="randomPick-text"
+  >
     Congratulations! You are now a proud fan of the:
   </h2>
   <Connect(NFLPick) />

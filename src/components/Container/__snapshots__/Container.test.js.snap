@@ -7,7 +7,7 @@ exports[`Container should match the snapshot 1`] = `
   <p
     id="welcome-text"
   >
-    Welcome to Pinnie Toss, a game for the casual football fan. Whether you're looking for a team to support for now, for later, or for always, Pinnie Toss is here to help.
+    Welcome to Pinnie Toss, an app designed for the casual football fan. Whether you're looking for a team to support for now, for later, or for always, Pinnie Toss is here to find you a team to love.
   </p>
   <article
     className="buttonContainer"
@@ -26,6 +26,11 @@ exports[`Container should match the snapshot 1`] = `
       <Route
         exact={true}
         path="/randomPick"
+        render={[Function]}
+      />
+      <Route
+        exact={true}
+        path="/surveyPt1"
         render={[Function]}
       />
     </Switch>

@@ -28,16 +28,21 @@ exports[`PickAMethod should match the snapshot with all data passed in correctly
   <div
     id="lightSurvey-buttons-container"
   >
-    <input
-      id="light-survey"
-      type="submit"
-      value=""
-    />
-    <button
-      id="lightSurvey-button"
+    <Link
+      id="survey-pt1-link"
+      to="/surveyPt1"
     >
-      Light Questionnaire
-    </button>
+      <input
+        id="light-survey"
+        type="submit"
+        value=""
+      />
+      <button
+        id="lightSurvey-button"
+      >
+        Light Questionnaire
+      </button>
+    </Link>
   </div>
 </article>
 `;

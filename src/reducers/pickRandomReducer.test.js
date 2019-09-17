@@ -8,7 +8,7 @@ describe('pickRandomReducer', () => {
     expect(result).toEqual(expected)
   });
 
-  it('should return the action\'s albums', () => {
+  it('should return the action\'s team', () => {
     let mockAction = {
       type: 'PICK_RANDOM',
       team: 
