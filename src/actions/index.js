@@ -27,3 +27,8 @@ export const addWinners = teams => ({
   type: 'ADD_WINNERS',
   teams
 })
+
+export const getFinalPick = team => ({
+  type: 'GET_FINAL_PICK',
+  team
+})

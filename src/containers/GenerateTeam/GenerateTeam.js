@@ -1,26 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import './GenerateTeam.css'
-import { pickRandom } from '../actions/index';
-import NFLPick from '../components/NFLPick/NFLPick'
-import NCAAPick from '../components/NCAAPick/NCAAPick'
+import NFLPick from '../../components/NFLPick/NFLPick'
+import NCAAPick from '../../components/NCAAPick/NCAAPick'
 import PropTypes from 'prop-types'
 
 
 export class GenerateTeam extends Component {
-
-  componentDidMount() {
-    if (this.props.underDogs.length > 0) {
-      let randomIndex = Math.floor(Math.random() * (this.props.underDogs.length))
-      let teamId = this.props.underDogs[randomIndex]
-      // this.props.teams.find(team => team.id ==)
-
-    } else {
-      let randomIndex = Math.floor(Math.random() * (this.props.winners.length))
-      let finalTeam = this.props.pickRandom(this.props.winners[randomIndex])
-    }
-  }
-
 
   render() {
     return (
@@ -40,11 +26,6 @@ export const mapStateToProps = store => ({
   underDogs: store.underDogs,
   winners: store.winners
 })
-
-export const mapDispatchToProps = dispatch => ({
-  pickRandom: team => dispatch(pickRandom(team))
-});
-
 
 export default connect(mapStateToProps)(GenerateTeam);
 

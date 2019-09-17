@@ -54,10 +54,10 @@ font-size: 25px;
     1px 1px 0 #193D7B;
 }
 
-/* #survey-pt1-link {
+#yourTeam-link {
   display: flex;
   flex-direction: column;
   text-decoration: none;
   justify-content: center;
   align-items: center;
-} */
+}

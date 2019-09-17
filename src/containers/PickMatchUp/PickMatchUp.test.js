@@ -31,7 +31,7 @@ describe('PickMatchUp', () => {
     const mockEvent = { preventDefault: jest.fn() }
 
     wrapper.instance().filterUnderDogs = jest.fn();
-    wrapper.find('button').at(0).simulate('click', mockEvent);
+    wrapper.find('button').at(1).simulate('click', mockEvent);
 
     expect(wrapper.instance().filterUnderDogs).toHaveBeenCalled();
   });
@@ -41,7 +41,7 @@ describe('PickMatchUp', () => {
     const mockEvent = { preventDefault: jest.fn() }
 
     wrapper.instance().filterUnderDogs = jest.fn();
-    wrapper.find('input').at(0).simulate('click', mockEvent);
+    wrapper.find('input').at(1).simulate('click', mockEvent);
 
     expect(wrapper.instance().filterUnderDogs).toHaveBeenCalled();
   });
