@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import './PickMatchUp.css'
 import { addSeason, addUnderDogs, addWinners } from '../../actions/index'
 import { fetchSeasonData } from '../../util/apiCalls'
+import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types'
 
 export class PickMatchUp extends Component {
@@ -32,12 +33,16 @@ export class PickMatchUp extends Component {
       <section className="PickMatchUp">
         <h1 id="pickMatchUp-text">Do you like an underdog?</h1>
         <div id="pickUnderDog-buttons-container">
-          <input type="submit" id="gloves" value="" onClick={(e) => this.filterUnderDogs(e)}/>
-          <button id="gloves-button" onClick={(e) => this.filterUnderDogs(e)}>Absolutely!</button>
+          <Link to="/yourTeam" id="yourTeam-link">
+            <input type="submit" id="gloves" value="" onClick={(e) => this.filterUnderDogs(e)}/>
+            <button id="gloves-button" onClick={(e) => this.filterUnderDogs(e)}>Absolutely!</button>
+          </Link>
         </div>
         <div id="pickSafeBet-buttons-container">
+          <Link to="/yourTeam" id="yourTeam-link">
             <input type="submit" id="trophy" value="" onClick={(e) => this.filterWinningestTeams(e)}/>
             <button id="trophy-button" onClick={(e) => this.filterWinningestTeams(e)}>No, I Prefer A Reliable Win</button>
+          </Link>
         </div>
       </section>
     )

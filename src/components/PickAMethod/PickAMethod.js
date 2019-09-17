@@ -28,7 +28,7 @@ export class PickAMethod extends Component {
           <button id="getRandom-button" onClick={(e) => this.randomTeam(e)}>Get Random Team</button>
         </div>
         <div id="lightSurvey-buttons-container">
-          <Link to="/surveyPt1" id="survey-pt1-link">
+          <Link to="/survey" id="survey-pt1-link">
           <input type="submit" id="light-survey" value=""/>
           <button id="lightSurvey-button" >Light Questionnaire</button>
           </Link>

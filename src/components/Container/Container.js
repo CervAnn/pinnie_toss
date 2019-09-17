@@ -4,6 +4,7 @@ import PickALeague from '../PickALeague/PickALeague';
 import PickAMethod from '../PickAMethod/PickAMethod';
 import PickMatchUp from '../../containers/Survey/PickMatchUp'
 import RandomPick from '../RandomPick/RandomPick';
+import GenerateTeam from '../../GenerateTeam/GenerateTeam';
 import {Switch, Route} from 'react-router-dom';
 import { connect } from "react-redux";
 import PropTypes from 'prop-types';
@@ -21,7 +22,8 @@ export class Container extends Component {
                 <Route exact path="/" render={() => <PickALeague />} />
                 <Route exact path="/method" render={() => <PickAMethod />} />
                 <Route exact path="/randomPick" render={() => <RandomPick />} />
-                <Route exact path="/surveyPt1" render={() => <PickMatchUp />} />
+                <Route exact path="/survey" render={() => <PickMatchUp />} />
+                <Route exact path="/yourTeam" render={() => <GenerateTeam />} />
             </Switch>
         </article>
       </section>
