@@ -8,7 +8,7 @@ import {
   getFinalPick
 } from "../../actions/index";
 import { fetchSeasonData } from "../../util/apiCalls";
-import { Link } from "react-router-dom";
+import { Redirect} from "react-router-dom";
 import PropTypes from "prop-types";
 
 export class PickMatchUp extends Component {
@@ -38,17 +38,17 @@ export class PickMatchUp extends Component {
     let randomIndex =
       Math.round(Math.random() * (filteredTeams.length - 0)) + 0;
     let faction = filteredTeams[randomIndex];
-    this.props.getFinalPick(
-      this.props.teams.find(team => team.idTeam === faction.teamid)
-    );
+    this.props.getFinalPick(this.props.teams.find(team => team.idTeam === faction.teamid));
   };
 
   render() {
+    if (this.props.finalPick.idTeam) {
+      return <Redirect push to={`/team/${this.props.finalPick.idTeam}`} />
+    }
     return (
       <section className="PickMatchUp">
         <h1 id="pickMatchUp-text">Do you like an underdog?</h1>
         <div id="pickUnderDog-buttons-container">
-          <Link to="/yourTeam" id="yourTeam-link">
             <input
               type="submit"
               id="gloves"
@@ -58,10 +58,8 @@ export class PickMatchUp extends Component {
             <button id="gloves-button" onClick={this.filterUnderDogs}>
               Absolutely!
             </button>
-          </Link>
         </div>
         <div id="pickSafeBet-buttons-container">
-          <Link to="/yourTeam" id="yourTeam-link">
             <input
               type="submit"
               id="trophy"
@@ -74,7 +72,6 @@ export class PickMatchUp extends Component {
             >
               No, I Prefer A Reliable Win
             </button>
-          </Link>
         </div>
       </section>
     );

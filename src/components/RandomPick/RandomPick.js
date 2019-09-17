@@ -5,20 +5,20 @@ import NCAAPick from "../NCAAPick/NCAAPick";
 import "./RandomPick.css";
 import PropTypes from "prop-types";
 
-export const RandomPick = ({ randomTeam }) => {
+export const RandomPick = ({ league }) => {
   return (
     <section className="RandomPick">
       <h2 id="randomPick-text">
-        Congratulations! You are now a proud fan of the:
+        Congratulations! Today you're a fan to the:
       </h2>
-      {randomTeam.strLeague === "NFL" ? <NFLPick /> : <NCAAPick />}
+      {league.leagueName === "NFL" ? <NFLPick /> : <NCAAPick />}
+
     </section>
   );
 };
 
 export const mapStateToProps = store => ({
-  teams: store.teams,
-  randomTeam: store.randomTeam
+  league: store.league
 });
 
 export default connect(mapStateToProps)(RandomPick);

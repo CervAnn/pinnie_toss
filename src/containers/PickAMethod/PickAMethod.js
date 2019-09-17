@@ -13,7 +13,7 @@ export class PickAMethod extends Component {
 
   render() {
     if (this.props.randomTeam.strTeam) {
-      return <Redirect push to="/randomPick" />;
+      return <Redirect push to={`/team/${this.props.randomTeam.idTeam}`} />
     }
     return (
       <article className="pickMethod">
