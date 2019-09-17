@@ -52,7 +52,17 @@ describe('NCAAPick', () => {
         }
       }
 
-      expect(mapStateToProps(mockStore)).toEqual(mockStore)
+      let expected = {
+        randomTeam: {
+          idTeam: "136915",
+          idLeague: "4479",
+          strTeam: "Michigan",
+          strAlternate: "Wolverines",
+          strTeamBadge: "https://www.thesportsdb.com/images/media/team/badge/8f2j7k1564336246.png"
+        }
+      }
+
+      expect(mapStateToProps(mockStore)).toEqual(expected)
     })
   })
 }) 

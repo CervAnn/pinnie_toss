@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import './PickALeague.css'
-import { fetchFootballData } from '../../apiCalls';
+import { fetchFootballData } from '../../util/apiCalls';
 import { addTeams } from '../../actions/index'
 import { connect } from "react-redux";
 import { Redirect } from 'react-router-dom'
 
-class PickALeague extends Component {
+export class PickALeague extends Component {
 
   getNFLTeams = (e) => {
     e.preventDefault()

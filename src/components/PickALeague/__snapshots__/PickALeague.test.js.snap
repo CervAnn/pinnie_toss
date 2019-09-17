@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PickALeague should match the snapshot with all data passed in correctly 1`] = `
+<article
+  className="pickLeague"
+>
+  <h1
+    id="pickLeague-text"
+  >
+    Let's Get Started, Pick A League!
+  </h1>
+  <div
+    id="nfl-buttons-container"
+  >
+    <input
+      id="nfl"
+      onClick={[Function]}
+      type="submit"
+      value=""
+    />
+    <button
+      id="nfl-button"
+      onClick={[Function]}
+    >
+      NFL
+    </button>
+  </div>
+  <div
+    id="ncaa-buttons-container"
+  >
+    <input
+      id="ncaa"
+      onClick={[Function]}
+      type="submit"
+      value=""
+    />
+    <button
+      id="ncaa-button"
+      onClick={[Function]}
+    >
+      NCAA
+    </button>
+  </div>
+</article>
+`;

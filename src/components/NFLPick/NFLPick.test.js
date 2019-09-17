@@ -40,19 +40,27 @@ describe('NFLPick', () => {
             idTeam: "134922",    
             strLeague: "NFL",  
             strTeam: "Baltimore Ravens",
-            strTeamBadge: "https://www.thesportsdb.com/images/media/team/badge/einz3p1546172463.png",
+            strTeamBadge: "https://www.thesportsdb.com/images/media/team/badge/einz3p1546172463.png"
           }
         ],
         randomTeam: {
-            idTeam: "136915",
-            idLeague: "4479",
-            strTeam: "Michigan",
-            strAlternate: "Wolverines",
-            strTeamBadge: "https://www.thesportsdb.com/images/media/team/badge/8f2j7k1564336246.png"
+          idTeam: "134920",
+          strLeague: "NFL",
+          strTeam: "New England Patriots",
+          strTeamBadge: "https://www.thesportsdb.com/images/media/team/badge/xtwxyt1421431860.png"
         }
       }
 
-      expect(mapStateToProps(mockStore)).toEqual(mockStore)
+      let expected = {
+        randomTeam: {
+          idTeam: "134920",
+          strLeague: "NFL",
+          strTeam: "New England Patriots",
+          strTeamBadge: "https://www.thesportsdb.com/images/media/team/badge/xtwxyt1421431860.png"
+        }
+      }
+
+      expect(mapStateToProps(mockStore)).toEqual(expected)
     })
   })
 }) 

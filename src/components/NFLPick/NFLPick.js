@@ -15,7 +15,6 @@ export const NFLPick = ({randomTeam}) => {
 }
 
 export const mapStateToProps = store => ({
-  teams: store.teams,
   randomTeam: store.randomTeam
 })
 

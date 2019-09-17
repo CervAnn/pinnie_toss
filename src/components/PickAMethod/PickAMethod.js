@@ -4,12 +4,11 @@ import { pickRandom } from '../../actions/index'
 import { Redirect } from 'react-router-dom'
 import { connect } from "react-redux";
 
-class PickAMethod extends Component {
+export class PickAMethod extends Component {
 
   randomTeam = (e) => {
     e.preventDefault()
     let randomIndex = Math.floor(Math.random() * (this.props.teams.length))
-    console.log(this.props.teams[randomIndex])
     this.props.pickRandom(this.props.teams[randomIndex])
     }
 

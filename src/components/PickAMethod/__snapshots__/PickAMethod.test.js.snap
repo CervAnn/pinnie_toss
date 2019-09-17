@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PickAMethod should match the snapshot with all data passed in correctly 1`] = `
+<article
+  className="pickMethod"
+>
+  <h1
+    id="pickMethod-text"
+  >
+    Would you like to pick a random team, or narrow down your options with a few questions?
+  </h1>
+  <div
+    id="getRandom-buttons-container"
+  >
+    <input
+      id="magic-ball"
+      onClick={[Function]}
+      type="submit"
+      value=""
+    />
+    <button
+      id="getRandom-button"
+      onClick={[Function]}
+    >
+      Get Random Team
+    </button>
+  </div>
+  <div
+    id="lightSurvey-buttons-container"
+  >
+    <input
+      id="light-survey"
+      type="submit"
+      value=""
+    />
+    <button
+      id="lightSurvey-button"
+    >
+      Light Questionnaire
+    </button>
+  </div>
+</article>
+`;
