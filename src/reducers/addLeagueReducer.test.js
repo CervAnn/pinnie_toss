@@ -1,16 +1,15 @@
-import { addLeagueReducer } from './addLeagueReducer';
+import { addLeagueReducer } from "./addLeagueReducer";
 
-describe('addLeagueReducer', () => {
-
-  it('should return the default state', () => {
+describe("addLeagueReducer", () => {
+  it("should return the default state", () => {
     let expected = {};
     let result = addLeagueReducer(undefined, {});
-    expect(result).toEqual(expected)
+    expect(result).toEqual(expected);
   });
 
-  it('should return a league object per the action', () => {
+  it("should return a league object per the action", () => {
     let mockAction = {
-      type: 'ADD_LEAGUE',
+      type: "ADD_LEAGUE",
       league: {
         leagueName: "NCAA",
         leagueId: 4479,
@@ -21,10 +20,10 @@ describe('addLeagueReducer', () => {
       leagueName: "NCAA",
       leagueId: 4479,
       leagueDivision: "FBS"
-    }
+    };
 
     let result = addLeagueReducer({}, mockAction);
-    
-    expect(result).toEqual(expected)
+
+    expect(result).toEqual(expected);
   });
-})
+});

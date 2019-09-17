@@ -1,15 +1,15 @@
 .App-header {
-  background-image: url('../../images/football-field-image.jpg');
+  background-image: url("../../images/football-field-image.jpg");
   height: 35vh;
   object-fit: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  color: #F4B641;
+  color: #f4b641;
   display: flex;
   align-items: flex-end;
-  font-family: 'Graduate', cursive;
+  font-family: "Graduate", cursive;
   border-bottom: 4px solid white;
 }
 
@@ -20,9 +20,6 @@
 
 #header-title {
   font-size: 165px;
-  text-shadow:
-  -4px -4px 0 #000,  
-   4px -4px 0 #000,
-   -4px 4px 0 #000,
+  text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000,
     4px 4px 0 #000;
 }
