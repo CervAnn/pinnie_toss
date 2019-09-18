@@ -30,16 +30,16 @@ This was a five-day solo project that incorporated HTML, CSS, ReactJS, React Rou
 ## Images
 
 ### Home Page:
-![Home screenshot](./src/image/Screenshot_PickALeague.png)
+![Home screenshot](./src/images/Screenshot_PickALeague.png)
 
 ### Pick Method League:
 ![Pick League screenshot](./src/images/Screenshot_PickAMethod.png)
 
 ### Survey :
-![Survey screenshot](./src/images/PickAMatch.png)
+![Survey screenshot](./src/images/Screenshot_PickAMatch.png)
 
 ### Initial Display Page:
-![Logged-in home page screenshot](./src/images/RandomPick.png)
+![Logged-in home page screenshot](./src/images/Screenshot_RandomPick.png)
 
 ### WireFrame:
 ![Favorites page screenshot](./src/images/WireFrame.jpg)
