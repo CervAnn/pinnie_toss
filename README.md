@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pinnie Toss: An App for the Indecisive Sports Enthusiast
 
-## Available Scripts
+Pinnie Toss is a web-based application that is designed for the casual football fan that finds themselves without a clear allegiance to a team, but often in and among devoted sports fans. Based on the user's league preference, "NFL" or "NCAA", the option to randomize or take a survey, and the option to opt for an "underdog" or "winning" team, Pinnie Toss generates a personalized team per the user's preferences.
 
-In the project directory, you can run:
+This was a five-day solo project that incorporated HTML, CSS, ReactJS, React Router, Redux, and Test-Driven Development using Enzyme and Jest. This app was a lot of fun to build, and I plan to continue working on it moving forward. If you'd like to see a plan for future iterations, please visit the GitHub issues page.
 
-### `npm start`
+## Initial Setup
+* Clone down the repo and install the dependencies with `npm install`.
+* Run `npm start` and visit http://localhost:3000 to view the application in the browser.
+* Run the test suite with `npm test`.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Learning Objectives
+* Make informed design decisions to create a user-friendly application.
+* Become comfortable with fetching different network API requests
+* Solidify concepts with React to create clean and re-useable components and JSX.
+* Become comfortable with Redux’s lifecycle, creating actions, reducers, and connecting them to React components.
+* Understand and solidify concepts with React component, asynchronous code, route handling, and Redux testing.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Built with the Following Libraries, Frameworks, and Tools: 
+  * React (`create-react-app`)
+  * React Router
+  * Functional React components
+  * Class React components
+  * Redux
+  * Testing Jest/Enzyme
+  * CSS
+  * Fetch API
+  * The Sports Database API (https://www.thesportsdb.com/)
+  
+## Images
 
-### `npm test`
+### Home Page:
+![Home screenshot](./src/image/Screenshot_PickALeague.png)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pick Method League:
+![Pick League screenshot](./src/images/Screenshot_PickAMethod.png)
 
-### `npm run build`
+### Survey :
+![Survey screenshot](./src/images/PickAMatch.png)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Initial Display Page:
+![Logged-in home page screenshot](./src/images/RandomPick.png)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### WireFrame:
+![Favorites page screenshot](./src/images/WireFrame.jpg)
