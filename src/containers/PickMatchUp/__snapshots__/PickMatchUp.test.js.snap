@@ -12,44 +12,34 @@ exports[`PickMatchUp should match the snapshot with all data passed in correctly
   <div
     id="pickUnderDog-buttons-container"
   >
-    <Link
-      id="yourTeam-link"
-      to="/yourTeam"
+    <input
+      id="gloves"
+      onClick={[Function]}
+      type="submit"
+      value=""
+    />
+    <button
+      id="gloves-button"
+      onClick={[Function]}
     >
-      <input
-        id="gloves"
-        onClick={[Function]}
-        type="submit"
-        value=""
-      />
-      <button
-        id="gloves-button"
-        onClick={[Function]}
-      >
-        Absolutely!
-      </button>
-    </Link>
+      Absolutely!
+    </button>
   </div>
   <div
     id="pickSafeBet-buttons-container"
   >
-    <Link
-      id="yourTeam-link"
-      to="/yourTeam"
+    <input
+      id="trophy"
+      onClick={[Function]}
+      type="submit"
+      value=""
+    />
+    <button
+      id="trophy-button"
+      onClick={[Function]}
     >
-      <input
-        id="trophy"
-        onClick={[Function]}
-        type="submit"
-        value=""
-      />
-      <button
-        id="trophy-button"
-        onClick={[Function]}
-      >
-        No, I Prefer A Reliable Win
-      </button>
-    </Link>
+      No, I Prefer A Reliable Win
+    </button>
   </div>
 </section>
 `;

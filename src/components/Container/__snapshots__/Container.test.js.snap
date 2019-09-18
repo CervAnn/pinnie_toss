@@ -24,18 +24,12 @@ exports[`Container should match the snapshot 1`] = `
         render={[Function]}
       />
       <Route
-        exact={true}
-        path="/randomPick"
+        path="/team"
         render={[Function]}
       />
       <Route
         exact={true}
         path="/survey"
-        render={[Function]}
-      />
-      <Route
-        exact={true}
-        path="/yourTeam"
         render={[Function]}
       />
     </Switch>

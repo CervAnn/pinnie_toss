@@ -7,8 +7,8 @@ exports[`RandomPick should render without crashing 1`] = `
   <h2
     id="randomPick-text"
   >
-    Congratulations! You are now a proud fan of the:
+    Congratulations! Today you're a fan to the:
   </h2>
-  <Connect(NFLPick) />
+  <Connect(NCAAPick) />
 </section>
 `;

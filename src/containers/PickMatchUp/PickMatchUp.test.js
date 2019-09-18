@@ -8,22 +8,25 @@ import {
 import { addSeason, addUnderDogs, addWinners } from "../../actions/index";
 
 describe("PickMatchUp", () => {
-  let wrapper, mockAddSeason, mockAddUnderDogs, mockAddWinners;
+  let wrapper, mockAddSeason, mockAddUnderDogs, mockAddWinners, mockGetFinalPick;
 
   beforeEach(() => {
     mockAddSeason = jest.fn();
     mockAddUnderDogs = jest.fn();
     mockAddWinners = jest.fn();
+    mockGetFinalPick = jest.fn();
     wrapper = shallow(
       <PickMatchUp
         addSeason={mockAddSeason}
         addUnderDogs={mockAddUnderDogs}
         addWinners={mockAddWinners}
+        getFinalPick={mockGetFinalPick}
         teams={[]}
         league={{}}
         season={2019}
         underDogs={[]}
         winners={[]}
+        finalPick={{}}
       />
     );
   });
